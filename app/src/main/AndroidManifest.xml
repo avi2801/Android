@@ -10,8 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZeeProject1">
         <activity
+            android:name=".ThirdScreen"
+            android:exported="false"
+            android:parentActivityName = ".SecondScreen"/>
+
+        <activity
             android:name=".SecondScreen"
             android:exported="false" />
+            //android:parentActivityName=".MainActivity"
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
