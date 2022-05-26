@@ -23,8 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         }
         myButton1.setOnClickListener{
-            var myIntent = Intent(this,MyService::class.java)
-            stopService(myIntent)
+//            var myIntent = Intent(this,MyService::class.java)
+//            stopService(myIntent)
+            var myIntent = Intent (this,ListActivity::class.java)
+            startActivity(myIntent)
 
         }
     }
