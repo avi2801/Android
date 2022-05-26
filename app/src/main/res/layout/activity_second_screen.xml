@@ -2,37 +2,75 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#AA2929"
     tools:context=".SecondScreen">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="319dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="191dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="218dp"
-        android:background="#171616"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textColor="#F4F3F3"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/myButton2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/myButton2"
         android:layout_width="203dp"
         android:layout_height="0dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginBottom="219dp"
+        android:layout_marginBottom="96dp"
         android:text="Next Screen"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+        app:layout_constraintTop_toBottomOf="@+id/subject" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="65dp"
+        android:background="#0A8FF8"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Mesage"
+        android:textAlignment="center"
+        android:textColor="#F8F5F5"
+        app:layout_constraintBottom_toTopOf="@+id/subject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rEmail" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="104dp"
+        android:background="#100F0F"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Subject"
+        android:textAlignment="center"
+        android:textColor="#E6E1E1"
+        app:layout_constraintBottom_toTopOf="@+id/myButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <EditText
+        android:id="@+id/rEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="109dp"
+        android:background="#909EED"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Write email"
+        android:textAlignment="center"
+        android:textColor="#EFE6E6"
+        app:layout_constraintBottom_toTopOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

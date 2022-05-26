@@ -1,30 +1,36 @@
 package com.example.zeeproject1
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_second_screen.*
 
 class SecondScreen : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second_screen)
-        var user = intent.extras?.getString("username")
-        textView1.setText(user)
-        myButton2.setOnClickListener {
-            var myIntent1 = Intent(this,ThirdScreen::class.java)
-            startActivity(myIntent1)
-        }
 
+        myButton2.setOnClickListener {
+            var receiver1 = rEmail.text.toString()
+            var message1 = message.text.toString()
+            var subject1 = subject.text.toString()
+            var myIntent1 = Intent(Intent.ACTION_SEND)
+            myIntent1.data = Uri.parse("mailto:")
+            myIntent1.setType("message/rfc822")
+            myIntent1.putExtra(Intent.EXTRA_EMAIL, arrayOf(receiver1))
+            myIntent1.putExtra(Intent.EXTRA_SUBJECT, subject1);
+            myIntent1.putExtra(Intent.EXTRA_TEXT, message1);
+            startActivity(Intent.createChooser(myIntent1,"Select the Client"));
+        }
 
         var actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
-
 
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

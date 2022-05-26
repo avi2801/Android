@@ -50,16 +50,16 @@
         android:layout_height="0dp"
         android:layout_marginStart="56dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="39dp"
+        android:layout_marginBottom="42dp"
         android:background="#5E5503"
         android:backgroundTint="#FFC107"
         android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-        android:text="Login"
+        android:text="Start"
         android:textAlignment="textStart"
         android:textSize="24sp"
         app:iconPadding="8dp"
         app:iconSize="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/myButton1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
@@ -80,27 +80,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <Button
+        android:id="@+id/myButton1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="74dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="126dp"
+        android:text="Stop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myButton"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="89dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/image1" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

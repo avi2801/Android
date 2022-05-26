@@ -13,5 +13,5 @@ class ThirdScreen : AppCompatActivity() {
         actionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
-   
+
 }
