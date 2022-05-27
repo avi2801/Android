@@ -7,15 +7,36 @@
     android:background="#E35B5B"
     tools:context=".SplashScreen">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="285dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="140dp"
-        android:text="TextView"
+    <Button
+        android:id="@+id/musicButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="148dp"
+        android:background="#F3EEEE"
+        android:text="Go Back"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textColor="#1E9AD3"
+        app:layout_constraintBottom_toTopOf="@+id/stopButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="272dp"
+        android:background="#ACEA64"
+        android:text="Stop"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

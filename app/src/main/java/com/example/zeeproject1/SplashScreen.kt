@@ -28,7 +28,7 @@ class SplashScreen : AppCompatActivity() {
             var i = Intent(this,MyService::class.java)
             startService(i)
 
-            Thread.sleep(10000)
+            Thread.sleep(200000)
 
             stopService(i)
 
@@ -36,6 +36,18 @@ class SplashScreen : AppCompatActivity() {
             startActivity(i3)
 
         }.start()
+        musicButton.setOnClickListener {
+            var i3 = Intent(this,MainActivity::class.java)
+            startActivity(i3)
+
+
+        }
+        stopButton.setOnClickListener {
+            var i4 = Intent(this,MyService::class.java)
+            stopService(i4)
+        }
+
+
 
 
 

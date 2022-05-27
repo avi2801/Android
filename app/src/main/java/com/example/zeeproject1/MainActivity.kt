@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(myIntent)
 //            var intent = Intent(this,SecondScreen::class.java)
 //            startActivity(intent)
-            var myIntent = Intent(this,MyService::class.java)
-            startService(myIntent)
+            var myIntent = Intent(this,SplashScreen::class.java)
+            startActivity(myIntent)
 
         }
         myButton1.setOnClickListener{
