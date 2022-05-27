@@ -29,6 +29,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
 
         }
+
+        buttonWeb.setOnClickListener {
+            var myIntent = Intent(this,WebViewActivity::class.java)
+            startActivity(myIntent)
+         }
     }
 
 }
